@@ -8,4 +8,4 @@ services:
     - /Users/yunussandikci/Documents/Zoom/:/backup/Zoom
     environment:
       CRON: "* * * * *" #crontab value for backup setting period
-      DROPBOX_TOKEN: "<>" #https://www.dropbox.com/developers/apps/create
+      DROPBOX_TOKEN: "<dropbox_token>" #https://www.dropbox.com/developers/apps/create
