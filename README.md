@@ -8,8 +8,8 @@ Cron backups is a docker image to automate periodic backups easily to Dropbox wi
 - Tiny footprint (9Mb)
 - Upload to Dropbox
 
-## Usage
-You only need to set your backup folders and 2 environment variables.
+## Configuration
+You need to set your backup folders as volumes and 2 environment variables.
 
 ### Volumes
 It backups every folder you mapped into `/backup` folder with volumes
