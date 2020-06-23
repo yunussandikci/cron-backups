@@ -1,0 +1,11 @@
+version: '3'
+services:
+  caddy:
+    image: cron-backups
+    volumes: #every folder or file you mapped into /backup folder will be backed-up
+    - /Users/yunussandikci/Pictures/:/backup/Pictures  
+    - /Users/yunussandikci/Downloads/:/backup/Downloads
+    - /Users/yunussandikci/Documents/Zoom/:/backup/Zoom
+    environment:
+      CRON: "* * * * *" #crontab value for backup setting period
+      DROPBOX_TOKEN: "<>" #https://www.dropbox.com/developers/apps/create
