@@ -1,7 +1,7 @@
 version: '3'
 services:
   caddy:
-    image: cron-backups
+    image: yunussandikci/cron-backups
     volumes: #every folder or file you mapped into /backup folder will be backed-up
     - /Users/yunussandikci/Pictures/:/backup/Pictures  
     - /Users/yunussandikci/Downloads/:/backup/Downloads
